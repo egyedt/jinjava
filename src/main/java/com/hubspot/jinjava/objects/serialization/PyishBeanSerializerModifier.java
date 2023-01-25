@@ -4,8 +4,10 @@ import com.fasterxml.jackson.databind.BeanDescription;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializationConfig;
 import com.fasterxml.jackson.databind.ser.BeanSerializerModifier;
+import com.google.common.annotations.Beta;
 import java.util.Map;
 
+@Beta
 public class PyishBeanSerializerModifier extends BeanSerializerModifier {
   public static final PyishBeanSerializerModifier INSTANCE = new PyishBeanSerializerModifier();
 
